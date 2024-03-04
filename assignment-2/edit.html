@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provide Books - Bookstore</title>
+</head>
+<link rel="stylesheet" href="edit.css">
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="catagery.html">Categories</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="countectuc.html">Contact Us</a></li>
+            <li><a href="usrprofile.html">User Profile</a></li>
+            <div class="navbar-actions">
+                <a href="edit.html">Edit</a>
+                <a href="collection.html">Collection</a>
+            </div>
+        </ul>
+    </nav>
+    <header>
+        <h1>Bookstore</h1>
+    </header>
+
+    <main>
+        <section class="provide-books-container">
+            <h2>Provide Books</h2>
+            <form action="submit_books.php" method="post" enctype="multipart/form-data">
+                <label for="title">Book Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+
+                <label for="price">Price:</label>
+                <input type="text" id="price" name="price" required>
+
+                <label for="image">Book Image:</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

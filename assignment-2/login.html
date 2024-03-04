@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bookstore</title>
+
+</head>
+<link rel="stylesheet" href="login.css">
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="catagery.html">Categories</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="countectuc.html">Contact Us</a></li>
+            <li><a href="usrprofile.html">User Profile</a></li>
+            <div class="navbar-actions">
+                <a href="edit.html">Edit</a>
+                <a href="collection.html">Collection</a>
+            </div>
+        </ul>
+    </nav>
+    <header>
+        <h1>Bookstore</h1>
+    </header>
+
+    <main>
+        <section class="login-container">
+            <h2>Login</h2>
+            <form action="login_process.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
